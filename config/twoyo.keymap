@@ -29,7 +29,7 @@
             label = "ACCENT_C";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp C>, <&kp RA(,)>;
+            bindings = <&kp C>, <&kp RA(COMMA)>;
         };
 
         td_o: accent_o {
