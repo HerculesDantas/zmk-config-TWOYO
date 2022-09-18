@@ -13,6 +13,11 @@
 #define L_SPACE   1
 #define R_SPACE   2
 #define CHAR_LAYER   3
+#define RST_LAYER   4
+
+&lt {
+        flavor =  "hold-preferred";
+}
 
 / {
         behaviors {
@@ -77,8 +82,8 @@
                         bindings = <
    &kp TAB  &kp Q &kp W &td_e &kp R &kp T     &kp Y &td_u  &td_i  &td_o  &kp P   &kp BSPC
    &kp ESC &td_a  &kp S &kp D &kp F &kp G        &kp H &kp J  &kp K     &kp L     &kp ENTER
-   &kp LSHFT &kp Z &kp X &td_c &kp V &kp B        &kp N &kp M  &kp COMMA &kp UP &lt CHAR_LAYER DOT
-   &kp LCTL &kp LGUI &kp LALT &lt L_SPACE SPACE   &lt R_SPACE SPACE &kp LEFT &kp DOWN &kp RIGHT
+   &kp LSHFT &kp Z &kp X &td_c &kp V &kp B        &kp N &kp M  &kp COMMA &kp DOT &kp RSHFT
+   &kp LCTL &lt RST_LAYER LGUI &kp LALT &lt L_SPACE SPACE   &lt R_SPACE SPACE &mo CHAR_LAYER &trans &kp RCTL
                         >;
                 };
 
@@ -124,4 +129,20 @@
                         >;
                 };
         };
+
+                reset_layer {
+// -----------------------------------------------------------------------------------------
+// |RESET|  /  |  ?  |     |     |      |   | BT0 | BT1 | BT2 |     |BTCLR| RESET |
+// |  F1 |  F2 | F3  | F4  | F5  |  F6  |   | F7  |  F8 |  F9 | F10 | F11 |           
+// | F12 |  \  |  |  |     |     |   +  |   |     |     |     |     |     |      
+// |     |     |     |     |            |   |           |     |     |     |
+                        bindings = <
+   &bootloader  &kp FSLH &kp QUESTION &trans &trans &trans     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2  &trans  &bt BT_CLR  &bootloader
+   &kp F1 &kp F2  &kp F3 &kp F4 &kp F5 &kp F6        &kp F7 &kp F8  &kp F9  &kp F10  &kp F11
+   &kp F12 &kp BSLH &kp PIPE &trans &trans &trans        &trans &trans  &trans &trans &trans
+   &trans &trans &trans &trans   &trans &trans &trans &trans
+                        >;
+                };
+
+
 };
