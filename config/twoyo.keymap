@@ -77,8 +77,8 @@
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P    | BKSP |
 // | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  | ENTER |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  UP |  .    |
-// | CTL | GUI | ALT  |     |   L+SPC   |   |    R+SPC   | LEFT| DOWN| RIGHT |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  SHFT |
+// | CTL | GUI | ALT  |     |   L+SPC   |   |    R+SPC   | CHR |     |  CTL  |
                         bindings = <
    &kp TAB  &kp Q &kp W &td_e &kp R &kp T     &kp Y &td_u  &td_i  &td_o  &kp P   &kp BSPC
    &kp ESC &td_a  &kp S &kp D &kp F &kp G        &kp H &kp J  &kp K     &kp L     &kp ENTER
@@ -91,12 +91,12 @@
 // -----------------------------------------------------------------------------------------
 // |TILDE |  &  |  *  |  (  |  )  |     |   |      |        |       |   -   |  =  | DEL |
 // |      |  $  |  %  |  ^  |     |     |   | HOME | PG_DWN | PG_UP |  END  |     |
-// |      |  !  |  @  |  #  |     |     |   |      |  ";"   |  "("  |       | ")" |
+// |      |  !  |  @  |  #  |     |     |   |      |  ";"   |  "("  |  ")"  |     |
 // |      |     |     |     |           |   |               |       |       |     |
                         bindings = <
    &kp TILDE  &kp AMPS &kp STAR &kp LPAR &kp RPAR &trans     &trans &trans  &trans  &kp MINUS  &kp EQUAL  &kp DEL
    &trans &kp DOLLAR  &kp PERCENT &kp CARET &trans &trans        &kp HOME &kp PG_DN  &kp PG_UP  &kp END  &trans
-   &trans &kp EXCL &kp AT &kp HASH &trans &trans        &trans &kp SEMICOLON  &kp LPAR &trans &kp RPAR
+   &trans &kp EXCL &kp AT &kp HASH &trans &trans        &trans &kp SEMICOLON  &kp LPAR &kp RPAR &trans
    &trans &trans &trans &trans   &trans &trans &trans &trans
                         >;
                 };
@@ -105,12 +105,12 @@
 // -----------------------------------------------------------------------------------------
 // |QUOTE |  7  |  8  |  9  |  0  |     |   |      |      |      |  -    |  =   | DEL |
 // |      |  4  |  5  |  6  |     |     |   | LEFT | DOWN |  UP  | RIGHT |      |
-// |      |  1  |  2  |  3  |     |     |   |      |      |L_BRC |       |R_BRC |
+// |      |  1  |  2  |  3  |     |     |   |      |      |L_BRC | R_BRC |      |
 // |      |     |     |     |     |     |   |             |      |       |      |
                         bindings = <
    &kp SQT  &kp N7 &kp N8 &kp N9 &kp N0 &trans     &trans &trans  &trans  &kp MINUS  &kp EQUAL  &kp DEL
    &trans &kp N4  &kp N5 &kp N6 &trans &trans        &kp LEFT &kp DOWN  &kp UP  &kp RIGHT  &trans
-   &trans &kp N1 &kp N2 &kp N3 &trans &trans        &trans &kp SEMICOLON  &kp LBKT &trans &kp RBKT
+   &trans &kp N1 &kp N2 &kp N3 &trans &trans        &trans &kp SEMICOLON  &kp LBKT &kp RBKT &trans
    &trans &trans &trans &trans   &trans &trans &trans &trans
                         >;
                 };
