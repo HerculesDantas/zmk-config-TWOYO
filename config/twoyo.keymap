@@ -81,7 +81,7 @@
 // | CTL | GUI | ALT  |     |   L+SPC   |   |    R+SPC   | CHR |     |  CTL  |
                         bindings = <
    &lt RST_LAYER TAB  &kp Q &kp W &td_e &kp R &kp T     &kp Y &td_u  &td_i  &td_o  &kp P   &kp BSPC
-   &kp ESC &td_a  &kp S &kp D &kp F &kp G        &kp H &kp J  &kp K     &kp L     &kp ENTER
+   &mt LCTL ESC &td_a  &kp S &kp D &kp F &kp G        &kp H &kp J  &kp K     &kp L     &kp ENTER
    &kp LSHFT &kp Z &kp X &td_c &kp V &kp B        &kp N &kp M  &kp COMMA &kp DOT &kp RSHFT
    &kp LCTL &kp LGUI &kp LALT &lt L_SPACE SPACE   &lt R_SPACE SPACE &mo CHAR_LAYER &trans &kp RCTL
                         >;
