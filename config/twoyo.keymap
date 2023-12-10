@@ -61,14 +61,6 @@
             bindings = <&kp U>, <&kp RA(U)>;
         };
 
-        td_a: accent_a {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ACCENT_A";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp A>, <&kp RA(A)>;
-        };
-
     };
         keymap {
                 compatible = "zmk,keymap";
