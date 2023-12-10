@@ -15,53 +15,7 @@
 #define CHAR_LAYER   3
 #define RST_LAYER   4
 
-&lt {
-        flavor =  "hold-preferred";
-};
-
 / {
-        behaviors {
-        td_e: accent_e {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ACCENT_E";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp E>, <&kp RA(E)>;
-        };
-
-        td_c: accent_c {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ACCENT_C";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp C>, <&kp RA(COMMA)>;
-        };
-
-        td_o: accent_o {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ACCENT_O";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp O>, <&kp RA(O)>;
-        };
-
-        td_i: accent_i {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ACCENT_I";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp I>, <&kp RA(I)>;
-        };
-
-        td_u: accent_u {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ACCENT_U";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp U>, <&kp RA(U)>;
-        };
-
-    };
         keymap {
                 compatible = "zmk,keymap";
 
