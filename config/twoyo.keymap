@@ -29,7 +29,7 @@
    &lt RST_LAYER TAB  &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U  &kp I  &kp O  &kp P   &kp BSPC
    &mt LCTL ESC &kp A  &kp S &kp D &kp F &kp G        &kp H &kp J  &kp K     &kp L     &kp ENTER
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B        &kp N &kp M  &kp COMMA &kp DOT &kp RSHFT
-   &kp LCTL &kp LGUI &kp LALT &lt L_SPACE SPACE   &lt R_SPACE SPACE &mo CHAR_LAYER &trans &kp RCTL
+   &kp LCTL &kp LGUI &kp LALT &lt L_SPACE TAB   &lt R_SPACE SPACE &mo CHAR_LAYER &trans &kp RCTL
                         >;
                 };
 
